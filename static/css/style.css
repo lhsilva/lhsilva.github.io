@@ -1,0 +1,104 @@
+:root {
+  --primary-bg: #f5f7fa;
+  --primary-color: #23272f;
+  --accent: #4f8cff;
+  --card-bg: #fff;
+  --card-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+  --footer-bg: #23272f;
+  --footer-text: #e0e0e0;
+  --nav-bg: #181b20;
+}
+
+header {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--primary-bg);
+  color: var(--primary-color);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  max-width: 800px;
+  margin: 2rem auto;
+  min-width: 400px;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+footer {
+  flex-shrink: 0;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+nav {
+  background: var(--nav-bg);
+  color: var(--footer-text);
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav a {
+  color: var(--footer-text);
+  margin: 0 1em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #f4f4f4;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1a5fd6;
+}
+
+#lang-select {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
